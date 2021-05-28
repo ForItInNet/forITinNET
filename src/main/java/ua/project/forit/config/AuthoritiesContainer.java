@@ -22,7 +22,7 @@ public abstract class AuthoritiesContainer
 
     public static Set<String> getAuthorities()
     {
-        Set<String> authorities = new HashSet<>();
+        Set<String> authorities = new HashSet<String>();
 
         for(Authorities authority: Authorities.values())
             authorities.add(authority.authority);
@@ -32,7 +32,7 @@ public abstract class AuthoritiesContainer
 
     public static Set<String> getSetAuthoritiesFrom(Authorities authority)
     {
-        Set<String> authorities = new HashSet<>();
+        Set<String> authorities = new HashSet<String>();
 
         for(Authorities auth: Authorities.values())
             if(auth.rank >= authority.rank)
@@ -43,7 +43,7 @@ public abstract class AuthoritiesContainer
 
     public static String[] getArrayAuthoritiesFrom(Authorities authority)
     {
-        Set<String> authorities = new HashSet<>();
+        Set<String> authorities = new HashSet<String>();
 
         for(Authorities auth: Authorities.values())
             if(auth.rank >= authority.rank)

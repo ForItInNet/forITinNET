@@ -44,7 +44,7 @@ public class AuthenticationController
     @GetMapping("/registration")
     public ResponseEntity<Void> registration()
     {
-        return new ResponseEntity<>(HttpStatus.OK);
+        return new ResponseEntity<Void>(HttpStatus.OK);
     }
 
     @PostMapping("/registration")
