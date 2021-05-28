@@ -7,8 +7,6 @@ import ua.project.forit.data.services.AuthenticationTokenService;
 import ua.project.forit.data.services.UserService;
 import ua.project.forit.exceptions.UserServiceException;
 
-import static com.mysql.cj.conf.PropertyKey.logger;
-
 @Service
 public class AuthorizationService
 {
